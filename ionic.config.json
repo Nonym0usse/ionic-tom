@@ -1,0 +1,8 @@
+{
+  "name": "ionic-deploy-tom",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
