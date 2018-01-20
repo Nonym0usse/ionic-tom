@@ -25678,39 +25678,18 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
-page-about boisson-title {
-  text-align: center;
+page-home .card {
+  width: 40%;
+  display: inline-block;
+  margin: 0 auto;
 }
 
-page-about .card-background-page ion-card {
-  padding-top: 2%;
-  position: relative;
-  text-align: center;
+page-list .form-center {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 30%;
 }
 
-page-about .card-background-page .card-title {
-  position: absolute;
-  top: 36%;
-  font-size: 2.0em;
-  width: 100%;
-  font-weight: bold;
-  color: #FFF;
-}
-
-page-about .card-background-page .card-subtitle {
-  font-size: 1.0em;
-  position: absolute;
-  top: 52%;
-  width: 100%;
-  color: #FFF;
-}
-
-page-home .boisson-title {
-  text-align: center;
-}
-
-page-home .card-background-page ion-card {
-  padding-top: 2%;
-  position: relative;
+page-list .title-nav {
   text-align: center;
 }

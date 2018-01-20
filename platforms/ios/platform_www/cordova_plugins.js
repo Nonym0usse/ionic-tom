@@ -38,9 +38,9 @@ module.exports.metadata =
 // TOP OF METADATA
 {
   "ionic-plugin-keyboard": "2.2.1",
-  "cordova-plugin-whitelist": "1.3.1",
-  "cordova-plugin-device": "1.1.4",
-  "cordova-plugin-splashscreen": "4.0.3",
+  "cordova-plugin-whitelist": "1.3.3",
+  "cordova-plugin-device": "1.1.7",
+  "cordova-plugin-splashscreen": "4.1.0",
   "cordova-plugin-ionic-webview": "1.1.16"
 };
 // BOTTOM OF METADATA

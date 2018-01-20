@@ -1,12 +1,10 @@
 page-home {
-  .boisson-title{
-    text-align: center;
+  .card{
+    width: 40%;
+    display: inline-block;
+    margin: 0 auto;
   }
-  .card-background-page {
-    ion-card {
-      padding-top: 2%;
-      position: relative;
-      text-align: center;
-    }
+  .img-card{
+
   }
 }

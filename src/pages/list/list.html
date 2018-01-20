@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Espace administrateur</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <h1 class="title-nav">Bienvenue sur l'espace administrateur</h1>
+  <h1>
+    {{ back }}
+  </h1>
+  <div class="form-center">
+    <form (ngSubmit)="admin()">
+         <ion-item>
+           <ion-label>Utilisateur</ion-label>
+           <ion-input type="text" [(ngModel)]="user.title" name="title"></ion-input>
+         </ion-item>
+         <ion-item>
+           <ion-label>Password</ion-label>
+           <ion-input type="password" [(ngModel)]="user.password"  name="description"></ion-input>
+         </ion-item>
+         <button ion-button type="submit" block>Connexion</button>
+    </form>
+  </div>
+</ion-content>
