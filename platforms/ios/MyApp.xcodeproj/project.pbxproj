@@ -329,6 +329,14 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 510;
+<<<<<<< HEAD
+=======
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = L3H337CJTV;
+					};
+				};
+>>>>>>> 7c16e7e21dba9009cbefba5bdbb61130108d57c2
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "__NON-CLI__" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -445,6 +453,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
+<<<<<<< HEAD
+=======
+				DEVELOPMENT_TEAM = L3H337CJTV;
+>>>>>>> 7c16e7e21dba9009cbefba5bdbb61130108d57c2
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -469,6 +481,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
+<<<<<<< HEAD
+=======
+				DEVELOPMENT_TEAM = L3H337CJTV;
+>>>>>>> 7c16e7e21dba9009cbefba5bdbb61130108d57c2
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyApp/MyApp-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;

@@ -127,12 +127,17 @@ var ModificationPage = (function () {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
     }
+<<<<<<< HEAD
     ModificationPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad ModificationPage');
     };
     ModificationPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-modification',template:/*ion-inline-start:"C:\Users\Cyril VELLA\Desktop\ionic-tom\src\pages\modification\modification.html"*/'<!--\n\n  Generated template for the ModificationPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>modification</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Cyril VELLA\Desktop\ionic-tom\src\pages\modification\modification.html"*/,
+=======
+    TabsPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/nonym0usse/Desktop/ionic-tom/src/pages/tabs/tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Boisson non alcolisées" tabIcon="beer"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="Boisson alcoolisées" tabIcon="wine"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/nonym0usse/Desktop/ionic-tom/src/pages/tabs/tabs.html"*/
+>>>>>>> 7c16e7e21dba9009cbefba5bdbb61130108d57c2
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], ModificationPage);
@@ -189,7 +194,11 @@ var SuppressionPage = (function () {
     };
     SuppressionPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+<<<<<<< HEAD
             selector: 'page-suppression',template:/*ion-inline-start:"C:\Users\Cyril VELLA\Desktop\ionic-tom\src\pages\suppression\suppression.html"*/'<!--\n\n  Generated template for the SuppressionPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Suppression</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <ion-card *ngFor="let pizza of mypizza">\n\n    <img src="{{pizza.picture}}"/>\n\n    <ion-card-content>\n\n      <ion-card-title>\n\n        <b>{{pizza.name}}</b>\n\n        </ion-card-title>\n\n      <p>\n\n        {{ pizza.desc}}\n\n      </p>\n\n      <button ion-button color="secondary" (click)=\'suppression(pizza.id);\'>Suppression</button>\n\n      <span style="float: right; color: blue">{{pizza.price}}€</span>\n\n    </ion-card-content>\n\n  </ion-card>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Cyril VELLA\Desktop\ionic-tom\src\pages\suppression\suppression.html"*/,
+=======
+            selector: 'page-about',template:/*ion-inline-start:"/Users/nonym0usse/Desktop/ionic-tom/src/pages/about/about.html"*/'<ion-header>\n\n  <ion-navbar color="dark">\n    <button ion-button icon-only menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n\n    <ion-title>\n      Boisson alcoolisées\n    </ion-title>\n\n    <ion-buttons end>\n      <button ion-button icon-only (click)="openModal()">\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content class="card-background-page">\n  <h2 class="boisson-title">Choisissez votre alcool</h2>\n  <ion-card>\n    <img src="assets/imgs/mojito.jpg"/>\n    <div class="card-title">Mojito</div>\n    <div class="card-subtitle">7,20€</div>\n  </ion-card>\n\n  <ion-card>\n    <img src="assets/imgs/heineken.jpg"/>\n    <div class="card-title">Bière - Heineken</div>\n  </ion-card>\n\n\n</ion-content>\n\n'/*ion-inline-end:"/Users/nonym0usse/Desktop/ionic-tom/src/pages/about/about.html"*/
+>>>>>>> 7c16e7e21dba9009cbefba5bdbb61130108d57c2
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_pizza_service_pizza_service__["a" /* PizzaServiceProvider */]])
     ], SuppressionPage);
@@ -290,7 +299,11 @@ var HomePage = (function () {
     }
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+<<<<<<< HEAD
             selector: 'page-home',template:/*ion-inline-start:"C:\Users\Cyril VELLA\Desktop\ionic-tom\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Choisir une boisson</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <ion-card class="card" *ngFor="let pizza of mypizza">\n\n    <img class="img-card" src="{{pizza.picture}}"/>\n\n    <ion-card-content>\n\n      <ion-card-title>\n\n        <b>{{pizza.name}}</b>\n\n        </ion-card-title>\n\n      <p>\n\n        {{ pizza.desc}}\n\n      </p>\n\n      <span style="float: right; color: blue">{{pizza.price}}€</span>\n\n    </ion-card-content>\n\n  </ion-card>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Cyril VELLA\Desktop\ionic-tom\src\pages\home\home.html"*/
+=======
+            selector: 'page-home',template:/*ion-inline-start:"/Users/nonym0usse/Desktop/ionic-tom/src/pages/home/home.html"*/'<ion-header>\n\n  <ion-navbar color="dark">\n    <button ion-button icon-only menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n\n    <ion-title>\n      Boisson non alcoolisées\n    </ion-title>\n\n    <ion-buttons end>\n      <button ion-button icon-only (click)="openModal()">\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n<!--<ion-content padding>\n  <h2>Emploi du temps du jour.</h2>\n  <hr />\n  <ion-list>\n    <div ion-item *ngFor="let products of myarray">\n      <h2>{{ products.shortdescription }}</h2>\n    </div>\n  </ion-list>\n</ion-content>-->\n\n<ion-content class="card-background-page">\n<h2 class="boisson-title">Choisir une boisson - Non alcoolisée</h2>\n  <ion-card>\n    <img src="assets/imgs/coca.jpg"/>\n  </ion-card>\n\n  <ion-card>\n    <img src="assets/imgs/redbull.jpg"/>\n  </ion-card>\n\n  <ion-card>\n    <img src="assets/imgs/orangina.jpg"/>\n  </ion-card>\n\n\n  <ion-card>\n    <img src="assets/imgs/7up.jpg"/>\n  </ion-card>\n\n  <ion-card>\n    <img src="assets/imgs/oasis.png"/>\n  </ion-card>\n\n  <ion-card>\n    <img src="assets/imgs/pepsi-zero.jpg"/>\n  </ion-card>\n\n  <ion-card>\n    <img src="assets/imgs/icedtea.jpg"/>\n  </ion-card>\n\n\n</ion-content>\n'/*ion-inline-end:"/Users/nonym0usse/Desktop/ionic-tom/src/pages/home/home.html"*/
+>>>>>>> 7c16e7e21dba9009cbefba5bdbb61130108d57c2
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__providers_pizza_service_pizza_service__["a" /* PizzaServiceProvider */]])
     ], HomePage);
@@ -560,7 +573,11 @@ var MyApp = (function () {
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Nav */])
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
+<<<<<<< HEAD
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\Cyril VELLA\Desktop\ionic-tom\src\app\app.html"*/'<ion-menu [content]="content">\n\n  <ion-header>\n\n    <ion-toolbar>\n\n      <ion-title>Menu</ion-title>\n\n    </ion-toolbar>\n\n  </ion-header>\n\n\n\n  <ion-content>\n\n    <ion-list>\n\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n\n        {{p.title}}\n\n      </button>\n\n    </ion-list>\n\n  </ion-content>\n\n\n\n</ion-menu>\n\n\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>'/*ion-inline-end:"C:\Users\Cyril VELLA\Desktop\ionic-tom\src\app\app.html"*/
+=======
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/nonym0usse/Desktop/ionic-tom/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/nonym0usse/Desktop/ionic-tom/src/app/app.html"*/
+>>>>>>> 7c16e7e21dba9009cbefba5bdbb61130108d57c2
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
