@@ -16,12 +16,16 @@
 <ion-content padding>
   <form (ngSubmit)="ajout()">
        <ion-item>
-         <ion-label>Utilisateur</ion-label>
+         <ion-label>Nom de la boisson</ion-label>
          <ion-input type="text" [(ngModel)]="ajout.title" name="title"></ion-input>
        </ion-item>
        <ion-item>
-         <ion-label>Password</ion-label>
-         <ion-input type="password" [(ngModel)]="ajout.password"  name="description"></ion-input>
+         <ion-label>Choix de la pompe</ion-label>
+         <ion-input type="number" [(ngModel)]="ajout.title" name="title"></ion-input>
+       </ion-item>
+       <ion-item>
+         <ion-label>Choix de la pompe 2</ion-label>
+         <ion-input type="number" [(ngModel)]="ajout.password"  name="description"></ion-input>
        </ion-item>
        <button ion-button type="submit" block>Ajouter une boisson</button>
   </form>

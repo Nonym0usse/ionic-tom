@@ -1,3 +1,13 @@
+/**
+ * @Author: CYRIL VELLA <Nonym0usse>
+ * @Date:   2018-01-19T22:18:19+01:00
+ * @Email:  cyril.vella@yahoo.com
+ * @Last modified by:   Nonym0usse
+ * @Last modified time: 2018-02-03T13:34:32+01:00
+ */
+
+
+
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -15,6 +25,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { PizzaServiceProvider } from '../providers/pizza-service/pizza-service';
 import { HttpClientModule } from '@angular/common/http';
+import { SQLite } from '@ionic-native/sqlite';
 
 @NgModule({
   declarations: [
@@ -46,6 +57,7 @@ import { HttpClientModule } from '@angular/common/http';
   providers: [
     StatusBar,
     SplashScreen,
+    SQLite,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     PizzaServiceProvider
   ]

@@ -1,3 +1,13 @@
+/**
+ * @Author: CYRIL VELLA <Nonym0usse>
+ * @Date:   2018-01-19T22:18:19+01:00
+ * @Email:  cyril.vella@yahoo.com
+ * @Last modified by:   Nonym0usse
+ * @Last modified time: 2018-02-03T12:25:16+01:00
+ */
+
+
+
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
