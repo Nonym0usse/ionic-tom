@@ -54,6 +54,13 @@ var MentionsPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ajout_ajout__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mentions_mentions__ = __webpack_require__(102);
+/**
+ * @Author: CYRIL VELLA
+ * @Date:   2018-01-19T23:40:18+01:00
+ * @Email:  cyril.vella@yahoo.com
+ * @Last modified by:   CYRIL VELLA
+ * @Last modified time: 2018-02-09T20:57:21+01:00
+ */
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -68,11 +75,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
- * Generated class for the MenuPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+* Generated class for the MenuPage page.
+*
+* See https://ionicframework.com/docs/components/#navigation for more info on
+* Ionic pages and navigation.
+*/
 var MenuPage = (function () {
     function MenuPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
@@ -127,17 +134,12 @@ var ModificationPage = (function () {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
     }
-<<<<<<< HEAD
     ModificationPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad ModificationPage');
     };
     ModificationPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-modification',template:/*ion-inline-start:"C:\Users\Cyril VELLA\Desktop\ionic-tom\src\pages\modification\modification.html"*/'<!--\n\n  Generated template for the ModificationPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>modification</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Cyril VELLA\Desktop\ionic-tom\src\pages\modification\modification.html"*/,
-=======
-    TabsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/nonym0usse/Desktop/ionic-tom/src/pages/tabs/tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Boisson non alcolisées" tabIcon="beer"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="Boisson alcoolisées" tabIcon="wine"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/nonym0usse/Desktop/ionic-tom/src/pages/tabs/tabs.html"*/
->>>>>>> 7c16e7e21dba9009cbefba5bdbb61130108d57c2
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], ModificationPage);
@@ -155,7 +157,7 @@ var ModificationPage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SuppressionPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_pizza_service_pizza_service__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_pizza_service_pizza_service__ = __webpack_require__(80);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -194,11 +196,7 @@ var SuppressionPage = (function () {
     };
     SuppressionPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-<<<<<<< HEAD
             selector: 'page-suppression',template:/*ion-inline-start:"C:\Users\Cyril VELLA\Desktop\ionic-tom\src\pages\suppression\suppression.html"*/'<!--\n\n  Generated template for the SuppressionPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Suppression</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <ion-card *ngFor="let pizza of mypizza">\n\n    <img src="{{pizza.picture}}"/>\n\n    <ion-card-content>\n\n      <ion-card-title>\n\n        <b>{{pizza.name}}</b>\n\n        </ion-card-title>\n\n      <p>\n\n        {{ pizza.desc}}\n\n      </p>\n\n      <button ion-button color="secondary" (click)=\'suppression(pizza.id);\'>Suppression</button>\n\n      <span style="float: right; color: blue">{{pizza.price}}€</span>\n\n    </ion-card-content>\n\n  </ion-card>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Cyril VELLA\Desktop\ionic-tom\src\pages\suppression\suppression.html"*/,
-=======
-            selector: 'page-about',template:/*ion-inline-start:"/Users/nonym0usse/Desktop/ionic-tom/src/pages/about/about.html"*/'<ion-header>\n\n  <ion-navbar color="dark">\n    <button ion-button icon-only menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n\n    <ion-title>\n      Boisson alcoolisées\n    </ion-title>\n\n    <ion-buttons end>\n      <button ion-button icon-only (click)="openModal()">\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content class="card-background-page">\n  <h2 class="boisson-title">Choisissez votre alcool</h2>\n  <ion-card>\n    <img src="assets/imgs/mojito.jpg"/>\n    <div class="card-title">Mojito</div>\n    <div class="card-subtitle">7,20€</div>\n  </ion-card>\n\n  <ion-card>\n    <img src="assets/imgs/heineken.jpg"/>\n    <div class="card-title">Bière - Heineken</div>\n  </ion-card>\n\n\n</ion-content>\n\n'/*ion-inline-end:"/Users/nonym0usse/Desktop/ionic-tom/src/pages/about/about.html"*/
->>>>>>> 7c16e7e21dba9009cbefba5bdbb61130108d57c2
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_pizza_service_pizza_service__["a" /* PizzaServiceProvider */]])
     ], SuppressionPage);
@@ -267,14 +265,14 @@ module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 204:
+/***/ 205:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_pizza_service_pizza_service__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_pizza_service_pizza_service__ = __webpack_require__(80);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -299,11 +297,7 @@ var HomePage = (function () {
     }
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-<<<<<<< HEAD
             selector: 'page-home',template:/*ion-inline-start:"C:\Users\Cyril VELLA\Desktop\ionic-tom\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Choisir une boisson</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <ion-card class="card" *ngFor="let pizza of mypizza">\n\n    <img class="img-card" src="{{pizza.picture}}"/>\n\n    <ion-card-content>\n\n      <ion-card-title>\n\n        <b>{{pizza.name}}</b>\n\n        </ion-card-title>\n\n      <p>\n\n        {{ pizza.desc}}\n\n      </p>\n\n      <span style="float: right; color: blue">{{pizza.price}}€</span>\n\n    </ion-card-content>\n\n  </ion-card>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Cyril VELLA\Desktop\ionic-tom\src\pages\home\home.html"*/
-=======
-            selector: 'page-home',template:/*ion-inline-start:"/Users/nonym0usse/Desktop/ionic-tom/src/pages/home/home.html"*/'<ion-header>\n\n  <ion-navbar color="dark">\n    <button ion-button icon-only menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n\n    <ion-title>\n      Boisson non alcoolisées\n    </ion-title>\n\n    <ion-buttons end>\n      <button ion-button icon-only (click)="openModal()">\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n<!--<ion-content padding>\n  <h2>Emploi du temps du jour.</h2>\n  <hr />\n  <ion-list>\n    <div ion-item *ngFor="let products of myarray">\n      <h2>{{ products.shortdescription }}</h2>\n    </div>\n  </ion-list>\n</ion-content>-->\n\n<ion-content class="card-background-page">\n<h2 class="boisson-title">Choisir une boisson - Non alcoolisée</h2>\n  <ion-card>\n    <img src="assets/imgs/coca.jpg"/>\n  </ion-card>\n\n  <ion-card>\n    <img src="assets/imgs/redbull.jpg"/>\n  </ion-card>\n\n  <ion-card>\n    <img src="assets/imgs/orangina.jpg"/>\n  </ion-card>\n\n\n  <ion-card>\n    <img src="assets/imgs/7up.jpg"/>\n  </ion-card>\n\n  <ion-card>\n    <img src="assets/imgs/oasis.png"/>\n  </ion-card>\n\n  <ion-card>\n    <img src="assets/imgs/pepsi-zero.jpg"/>\n  </ion-card>\n\n  <ion-card>\n    <img src="assets/imgs/icedtea.jpg"/>\n  </ion-card>\n\n\n</ion-content>\n'/*ion-inline-end:"/Users/nonym0usse/Desktop/ionic-tom/src/pages/home/home.html"*/
->>>>>>> 7c16e7e21dba9009cbefba5bdbb61130108d57c2
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__providers_pizza_service_pizza_service__["a" /* PizzaServiceProvider */]])
     ], HomePage);
@@ -314,7 +308,7 @@ var HomePage = (function () {
 
 /***/ }),
 
-/***/ 205:
+/***/ 206:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -362,13 +356,13 @@ var ListPage = (function () {
 
 /***/ }),
 
-/***/ 206:
+/***/ 207:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(207);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(228);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(229);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -376,7 +370,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 228:
+/***/ 229:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -384,19 +378,19 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(276);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(204);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_list_list__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(285);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_list_list__ = __webpack_require__(206);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_ajout_ajout__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_suppression_suppression__ = __webpack_require__(105);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_modification_modification__ = __webpack_require__(104);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_menu_menu__ = __webpack_require__(103);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_mentions_mentions__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_status_bar__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_splash_screen__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__providers_pizza_service_pizza_service__ = __webpack_require__(78);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__angular_common_http__ = __webpack_require__(161);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__ionic_native_sqlite__ = __webpack_require__(285);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_status_bar__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_splash_screen__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__providers_pizza_service_pizza_service__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__angular_common_http__ = __webpack_require__(163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__ionic_native_sqlite__ = __webpack_require__(161);
 /**
  * @Author: CYRIL VELLA <Nonym0usse>
  * @Date:   2018-01-19T22:18:19+01:00
@@ -481,7 +475,7 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 258:
+/***/ 267:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -506,17 +500,17 @@ var Pizza = (function () {
 
 /***/ }),
 
-/***/ 276:
+/***/ 285:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(204);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_list_list__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_list_list__ = __webpack_require__(206);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_suppression_suppression__ = __webpack_require__(105);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_modification_modification__ = __webpack_require__(104);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_ajout_ajout__ = __webpack_require__(50);
@@ -573,11 +567,7 @@ var MyApp = (function () {
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Nav */])
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
-<<<<<<< HEAD
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\Cyril VELLA\Desktop\ionic-tom\src\app\app.html"*/'<ion-menu [content]="content">\n\n  <ion-header>\n\n    <ion-toolbar>\n\n      <ion-title>Menu</ion-title>\n\n    </ion-toolbar>\n\n  </ion-header>\n\n\n\n  <ion-content>\n\n    <ion-list>\n\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n\n        {{p.title}}\n\n      </button>\n\n    </ion-list>\n\n  </ion-content>\n\n\n\n</ion-menu>\n\n\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>'/*ion-inline-end:"C:\Users\Cyril VELLA\Desktop\ionic-tom\src\app\app.html"*/
-=======
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/nonym0usse/Desktop/ionic-tom/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/nonym0usse/Desktop/ionic-tom/src/app/app.html"*/
->>>>>>> 7c16e7e21dba9009cbefba5bdbb61130108d57c2
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
@@ -595,12 +585,13 @@ var MyApp = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AjoutPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_sqlite__ = __webpack_require__(161);
 /**
  * @Author: CYRIL VELLA <Nonym0usse>
  * @Date:   2018-01-19T22:18:19+01:00
  * @Email:  cyril.vella@yahoo.com
- * @Last modified by:   Nonym0usse
- * @Last modified time: 2018-02-03T12:25:16+01:00
+ * @Last modified by:   CYRIL VELLA
+ * @Last modified time: 2018-02-09T21:19:21+01:00
  */
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -613,6 +604,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
+var DATABASE_FILE = "data.db";
 /**
  * Generated class for the AjoutPage page.
  *
@@ -620,11 +613,31 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Ionic pages and navigation.
  */
 var AjoutPage = (function () {
-    function AjoutPage(navCtrl, navParams) {
+    function AjoutPage(navCtrl, navParams, sqlite) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
+        this.sqlite = sqlite;
         this.boisson = [];
+        this.createDatabase();
     }
+    AjoutPage.prototype.createDatabase = function () {
+        var _this = this;
+        this.sqlite.create({
+            name: DATABASE_FILE,
+            location: 'default'
+        })
+            .then(function (db) {
+            console.log('la base de donnée à ete crée');
+            _this.db = db;
+            _this.createTable();
+        })
+            .catch(function (e) { return console.log(e); });
+    };
+    AjoutPage.prototype.createTable = function () {
+        this.db.executeSql('CREATE TABLE IF NOT EXISTS `Boisson` ( `idBoisson` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, `nom` TEXT NOT NULL, `prix` NUMERIC, `description` TEXT, `pompe1` INTEGER, `pompe2` INTEGER, `photo` TEXT, `actif` INTEGER NOT NULL, `EstAlcoolisee` INTEGER NOT NULL )', {})
+            .then(function () { return console.log('Executed SQL'); })
+            .catch(function (e) { return console.log(e); });
+    };
     AjoutPage.prototype.ajout = function () {
         console.log(this.boisson);
     };
@@ -632,7 +645,7 @@ var AjoutPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-ajout',template:/*ion-inline-start:"C:\Users\Cyril VELLA\Desktop\ionic-tom\src\pages\ajout\ajout.html"*/'<!--\n\n  Generated template for the AjoutPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Ajouter une boisson</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <form (ngSubmit)="ajout()">\n\n       <ion-item>\n\n         <ion-label>Nom de la boisson</ion-label>\n\n         <ion-input type="text" [(ngModel)]="ajout.title" name="title"></ion-input>\n\n       </ion-item>\n\n       <ion-item>\n\n         <ion-label>Choix de la pompe</ion-label>\n\n         <ion-input type="number" [(ngModel)]="ajout.title" name="title"></ion-input>\n\n       </ion-item>\n\n       <ion-item>\n\n         <ion-label>Choix de la pompe 2</ion-label>\n\n         <ion-input type="number" [(ngModel)]="ajout.password"  name="description"></ion-input>\n\n       </ion-item>\n\n       <button ion-button type="submit" block>Ajouter une boisson</button>\n\n  </form>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Cyril VELLA\Desktop\ionic-tom\src\pages\ajout\ajout.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_sqlite__["a" /* SQLite */]])
     ], AjoutPage);
     return AjoutPage;
 }());
@@ -641,14 +654,14 @@ var AjoutPage = (function () {
 
 /***/ }),
 
-/***/ 78:
+/***/ 80:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PizzaServiceProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(163);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_pizza__ = __webpack_require__(258);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_pizza__ = __webpack_require__(267);
 /**
  * @Date:   2018-01-19T22:18:19+01:00
  * @Last modified time: 2018-02-03T12:25:11+01:00
@@ -725,5 +738,5 @@ var PizzaServiceProvider = (function () {
 
 /***/ })
 
-},[206]);
+},[207]);
 //# sourceMappingURL=main.js.map
