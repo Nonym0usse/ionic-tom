@@ -2,15 +2,15 @@
 * @Author: CYRIL VELLA <Nonym0usse>
 * @Date:   2018-01-19T22:18:19+01:00
 * @Email:  cyril.vella@yahoo.com
- * @Last modified by:   CYRIL VELLA
- * @Last modified time: 2018-02-10T15:41:10+01:00
+ * @Last modified by:   nonym0usse
+ * @Last modified time: 2018-02-10T16:10:59+01:00
 */
 
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { SQLite, SQLiteObject } from '@ionic-native/sqlite';
 
-const DATABASE_FILE: string = "data.db";
+const DATABASE_FILE: string = 'data.db';
 
 @IonicPage()
 @Component({
@@ -21,17 +21,19 @@ export class AjoutPage {
 
   private db: SQLiteObject;
 
-  boisson = {};
+  boisson = [];
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private sqlite: SQLite) {
     this.createDatabase();
   }
 
   private createDatabase(){
+
     this.sqlite.create({
       name: DATABASE_FILE,
       location: 'default'
     })
+
     .then((db: SQLiteObject) => {
       console.log('la base de donnée à ete crée');
       this.db = db;
@@ -50,14 +52,14 @@ export class AjoutPage {
   ajout()
   {
 
-    if(this.boisson.actif == true)
+    if(this.boisson['actif'] == true)
     {
-      this.boisson.actif = 1;
+      this.boisson['actif'] = 1;
     }else{
-      this.boisson.actif = 0;
+      this.boisson['actif'] = 0;
     }
 
-    this.db.executeSql('INSERT INTO `Boisson` (nom, prix, description, pompe1, pompe2, photo, actif, EstAlcoolisee) VALUES (\''+ this.nom + '\', '+ this.prix+', \''+ this.description + '\', '+ this.pompe1+', '+ this.pompe2+', \''+ this.photo + '\''+ this.actif+', '+ this.EstAlcoolisee +', last_insert_rowid())', {})
+    this.db.executeSql('INSERT INTO `Boisson` (nom, prix, description, pompe1, pompe2, photo, actif, EstAlcoolisee) VALUES (\''+ this.boisson['nom'] + '\', '+ this.boisson['prix']+', \''+ this.boisson['description'] + '\', '+ this.boisson['pompe1']+', '+ this.boisson['pompe2']+', \''+ this.boisson['photo'] +', \'' + this.boisson['actif']+ ', '+ this.boisson['EstAlcoolisee'] +', last_insert_rowid())', {})
     .then(() => console.log('Executed SQL'))
     .catch(e => console.log(e));
   }
