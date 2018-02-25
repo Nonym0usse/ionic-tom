@@ -3,7 +3,7 @@
 * @Date:   2018-01-19T22:18:19+01:00
 * @Email:  cyril.vella@yahoo.com
  * @Last modified by:   CYRIL VELLA
- * @Last modified time: 2018-02-25T10:27:07+01:00
+ * @Last modified time: 2018-02-25T10:35:33+01:00
 */
 
 import { Component } from '@angular/core';
@@ -21,6 +21,7 @@ export class AjoutPage {
 
   private db: SQLiteObject;
   boisson = [];
+  boisson2 = [];
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private sqlite: SQLite) {
     this.createDatabaseFile();
@@ -52,5 +53,25 @@ export class AjoutPage {
     .then(() => console.log('Movie inserted !'))
     .then(() => console.log('Executed SQL'))
     .catch(e => console.log(e));
+  }
+
+  displayBoisson()
+  {
+    this.boisson2 = [];
+   this.db.executeSql('SELECT name FROM `Boisson`', {})
+   .then((data) => {
+
+     if(data == null) {
+       return;
+     }
+
+     if(data.rows) {
+       if(data.rows.length > 0) {
+         for(var i = 0; i < data.rows.length; i++) {
+           this.boisson2.push(data.rows.item(i).name);
+         }
+       }
+     }
+   });
   }
 }

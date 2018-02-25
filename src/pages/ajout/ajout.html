@@ -45,4 +45,10 @@ Ionic pages and navigation.
     </ion-item>
     <button ion-button type="submit" block>Ajouter une boisson</button>
   </form>
+
+  <ion-list *ngIf="boisson2">
+    <ion-item *ngFor="let movie of boisson2">
+      <ion-label fixed>{{ movie }}</ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>
