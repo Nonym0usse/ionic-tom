@@ -3,7 +3,7 @@
 * @Date:   2018-01-19T22:18:19+01:00
 * @Email:  cyril.vella@yahoo.com
  * @Last modified by:   CYRIL VELLA
- * @Last modified time: 2018-02-25T02:07:31+01:00
+ * @Last modified time: 2018-02-25T09:49:47+01:00
 */
 
 import { Component } from '@angular/core';
@@ -27,17 +27,17 @@ export class AjoutPage {
   }
 
   private createDatabaseFile(): void {
-   this.sqlite.create({
-     name: DATABASE_FILE,
-     location: 'default'
-   })
-     .then((db: SQLiteObject) => {
-       console.log('Bdd créée !');
-       this.db = db;
-       this.createTable();
-     })
-     .catch(e => console.log(e));
- }
+    this.sqlite.create({
+      name: DATABASE_FILE,
+      location: 'default'
+    })
+    .then((db: SQLiteObject) => {
+      console.log('Bdd créée !');
+      this.db = db;
+      this.createTable();
+    })
+    .catch(e => console.log(e));
+  }
 
   private createTable()
   {
@@ -56,7 +56,8 @@ export class AjoutPage {
       this.boisson['actif'] = 0;
     }
 
-    this.db.executeSql('INSERT INTO `Boisson` (nom, prix, description, pompe1, pompe2, photo, actif, EstAlcoolisee) VALUES (\''+ this.boisson['nom'] + '\', '+ this.boisson['prix']+', \''+ this.boisson['description'] + '\', '+ this.boisson['pompe1']+', '+ this.boisson['pompe2']+', \''+ this.boisson['photo'] +', \'' + this.boisson['actif']+ ', '+ this.boisson['EstAlcoolisee'] +', last_insert_rowid())', {})
+    this.db.executeSql('INSERT INTO `Boisson` (nom, prix, description, pompe1, pompe2, photo, actif, EstAlcoolisee) VALUES (\'' + this.boisson['nom'] + '\', '+ this.boisson['prix'] +', \''+ this.boisson['description'] +'\', '+ this.boisson['pompe1'] +', '+ this.boisson['pompe2'] +', \''+ this.boisson['photo'] +'\', '+ this.boisson['actif'] +', '+ this.boisson['EstAlcoolisee'] +', last_insert_rowid())', {})
+    .then(() => console.log('Movie inserted !'))
     .then(() => console.log('Executed SQL'))
     .catch(e => console.log(e));
   }
