@@ -1,3 +1,13 @@
+/**
+ * @Author: CYRIL VELLA
+ * @Date:   2018-01-19T22:18:19+01:00
+ * @Email:  cyril.vella@yahoo.com
+ * @Last modified by:   CYRIL VELLA
+ * @Last modified time: 2018-02-25T00:32:44+01:00
+ */
+
+
+
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -27,9 +37,7 @@ export class MyApp {
     this.pages = [
       { title: 'Accueil', component: HomePage },
       { title: 'Espace administrateur', component: ListPage },
-      { title: 'Mentions légales', component: SuppressionPage},
-      { title: 'Modification pizza', component: ModificationPage},
-      { title: 'Ajouter pizza', component: AjoutPage}
+      { title: 'Mentions légales', component: SuppressionPage}
     ]
   }
 

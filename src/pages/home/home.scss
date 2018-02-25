@@ -1,10 +1,21 @@
+// @Author: CYRIL VELLA
+// @Date:   2018-01-19T22:18:19+01:00
+// @Email:  cyril.vella@yahoo.com
+// @Last modified by:   CYRIL VELLA
+// @Last modified time: 2018-02-25T00:44:40+01:00
+
+
+
 page-home {
   .card{
     width: 40%;
     display: inline-block;
     margin: 0 auto;
   }
-  .img-card{
-
+  .theme{
+    background-image: url('../assets/imgs/background.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    flex: 1;
   }
 }

@@ -2,8 +2,8 @@
 * @Author: CYRIL VELLA <Nonym0usse>
 * @Date:   2018-01-19T22:18:19+01:00
 * @Email:  cyril.vella@yahoo.com
- * @Last modified by:   nonym0usse
- * @Last modified time: 2018-02-10T16:10:59+01:00
+ * @Last modified by:   CYRIL VELLA
+ * @Last modified time: 2018-02-25T00:30:29+01:00
 */
 
 import { Component } from '@angular/core';

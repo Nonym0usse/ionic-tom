@@ -33,32 +33,35 @@ void loop() {
 
 void process(BridgeClient client) {
   String command = client.readStringUntil('/');
+  int motor2;
 
   if (command == "make") {
     getBoisson(client);
   }
 }
 
+void setHeaders(BridgeClient client){
+  //adding headers
+  client.println(F("Status: 200"));
+  client.println(F("Access-Control-Allow-Origin: *"));
+  client.println(); //mandatory blank line
+}
 
 void getBoisson(BridgeClient client) {
 
   int motor, motor2, dosage, dosage2;
 
+  int motor, motor2, dosage, dosage2;
+
   motor = client.parseInt();
+  motor2 = client.parseInt();
   
   if (client.read() == '/') {
-    motor2 = client.parseInt();
-    dosage = client.parseInt();
-    dosage2 = client.parseInt();
+  Serial.print(motor);
+  Serial.print('\n');
+  Serial.print(motor2);
 
-    int final = dosage * 10;
-    int final2 = dosage2 * 10;
-  
-    digitalWrite(motor, HIGH);
-    delay(final);
-    digitalWrite(motor, LOW);
-    digitalWrite(motor2, HIGH);
-    delay(final2);
-
+  }else{
+    Serial.print("error");
   }
 }

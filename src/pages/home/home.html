@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="dark">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
@@ -7,17 +7,6 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <ion-card class="card" *ngFor="let pizza of mypizza">
-    <img class="img-card" src="{{pizza.picture}}"/>
-    <ion-card-content>
-      <ion-card-title>
-        <b>{{pizza.name}}</b>
-        </ion-card-title>
-      <p>
-        {{ pizza.desc}}
-      </p>
-      <span style="float: right; color: blue">{{pizza.price}}€</span>
-    </ion-card-content>
-  </ion-card>
+<ion-content padding class="theme">
+
 </ion-content>

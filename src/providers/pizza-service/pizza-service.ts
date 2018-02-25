@@ -1,6 +1,6 @@
 /**
  * @Date:   2018-01-19T22:18:19+01:00
- * @Last modified time: 2018-02-03T12:25:11+01:00
+ * @Last modified time: 2018-02-25T00:33:32+01:00
  */
 
 
@@ -21,10 +21,7 @@ import { Pizza } from '../../models/pizza'
   @Injectable()
   export class PizzaServiceProvider {
 
-
-    //private readonly url = "http://localhost:8080/pizza/";
-    //private readonly url = "http://kim.jcatania.io:3000/pizza/"
-    private readonly url = "pizza.json";
+    private url = "http://kim.jcatania.io:3000/pizza/"
 
     constructor(private http: HttpClient)
     {
