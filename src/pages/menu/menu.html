@@ -6,16 +6,16 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color="dark">
     <ion-title>Menu</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding class="theme">
   <ion-list>
-    <button ion-item *ngFor="let p of items" (click)="openPage(p)">
+    <button ion-item *ngFor="let p of items" (click)="openPage(p)" class="button-style">
       {{ p.title }}
     </button>
   </ion-list>

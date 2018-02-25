@@ -1,3 +1,21 @@
-page-menu {
+// @Author: CYRIL VELLA
+// @Date:   2018-01-19T23:40:18+01:00
+// @Email:  cyril.vella@yahoo.com
+// @Last modified by:   CYRIL VELLA
+// @Last modified time: 2018-02-25T01:30:21+01:00
 
+
+
+page-menu {
+  .theme{
+    background-image: url('../assets/imgs/background.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    flex: 1;
+  }
+
+  .button-style{
+    background-color: rgba(255,255, 255, 0);
+    color: #FFF;
+  }
 }

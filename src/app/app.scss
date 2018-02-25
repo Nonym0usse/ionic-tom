@@ -1,3 +1,11 @@
+// @Author: CYRIL VELLA
+// @Date:   2018-01-19T22:18:19+01:00
+// @Email:  cyril.vella@yahoo.com
+// @Last modified by:   CYRIL VELLA
+// @Last modified time: 2018-02-25T01:38:16+01:00
+
+
+
 // http://ionicframework.com/docs/theming/
 
 
@@ -14,3 +22,14 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+.theme{
+  background-image: url('../assets/imgs/background.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  flex: 1;
+}
+
+.button-style{
+  background-color: rgba(255,255, 255, 0);
+  color: #FFF;
+}

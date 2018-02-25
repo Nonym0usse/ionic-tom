@@ -3,7 +3,7 @@
 * @Date:   2018-01-19T22:18:19+01:00
 * @Email:  cyril.vella@yahoo.com
  * @Last modified by:   CYRIL VELLA
- * @Last modified time: 2018-02-25T00:30:29+01:00
+ * @Last modified time: 2018-02-25T02:07:31+01:00
 */
 
 import { Component } from '@angular/core';
@@ -20,27 +20,24 @@ const DATABASE_FILE: string = 'data.db';
 export class AjoutPage {
 
   private db: SQLiteObject;
-
   boisson = [];
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private sqlite: SQLite) {
-    this.createDatabase();
+    this.createDatabaseFile();
   }
 
-  private createDatabase(){
-
-    this.sqlite.create({
-      name: DATABASE_FILE,
-      location: 'default'
-    })
-
-    .then((db: SQLiteObject) => {
-      console.log('la base de donnée à ete crée');
-      this.db = db;
-      this.createTable();
-    })
-    .catch(e => console.log(e));
-  }
+  private createDatabaseFile(): void {
+   this.sqlite.create({
+     name: DATABASE_FILE,
+     location: 'default'
+   })
+     .then((db: SQLiteObject) => {
+       console.log('Bdd créée !');
+       this.db = db;
+       this.createTable();
+     })
+     .catch(e => console.log(e));
+ }
 
   private createTable()
   {
