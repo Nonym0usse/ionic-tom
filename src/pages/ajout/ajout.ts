@@ -3,7 +3,7 @@
 * @Date:   2018-01-19T22:18:19+01:00
 * @Email:  cyril.vella@yahoo.com
  * @Last modified by:   CYRIL VELLA
- * @Last modified time: 2018-02-25T10:58:01+01:00
+ * @Last modified time: 2018-02-25T11:03:24+01:00
 */
 
 import { Component } from '@angular/core';
@@ -62,6 +62,8 @@ export class AjoutPage {
     }else{
       this.boisson['EstAlcoolisee'] = 0;
     }
+
+    this.boisson['photo'] = "test";
 
     this.db.executeSql('INSERT INTO `Boisson` (nom, prix, description, pompe1, pompe2, photo, actif, EstAlcoolisee) VALUES (\'' + this.boisson['nom'] + '\', '+ parseFloat(this.boisson['prix']) +', \''+ this.boisson['description'] +'\', '+ parseInt(this.boisson['pompe1']) +', '+ parseInt(this.boisson['pompe2']) +', \''+ this.boisson['photo'] +'\', '+ this.boisson['actif'] +', '+ this.boisson['EstAlcoolisee'] +', last_insert_rowid())', {})
     .then(() => console.log('INSERT : OK'))
