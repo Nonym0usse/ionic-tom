@@ -13,7 +13,7 @@ webpackJsonp([5],{
 * @Date:   2018-01-19T22:18:19+01:00
 * @Email:  cyril.vella@yahoo.com
  * @Last modified by:   CYRIL VELLA
- * @Last modified time: 2018-02-25T10:27:07+01:00
+ * @Last modified time: 2018-02-25T10:48:52+01:00
 */
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -34,6 +34,7 @@ var AjoutPage = (function () {
         this.navParams = navParams;
         this.sqlite = sqlite;
         this.boisson = [];
+        this.boisson2 = [];
         this.createDatabaseFile();
     }
     AjoutPage.prototype.createDatabaseFile = function () {
@@ -55,14 +56,43 @@ var AjoutPage = (function () {
             .catch(function (e) { return console.log(e); });
     };
     AjoutPage.prototype.ajout = function () {
+        if (this.boisson['actif'] == true) {
+            this.boisson['actif'] = 1;
+        }
+        else {
+            this.boisson['actif'] = 0;
+        }
+        if (this.boisson['EstAlcoolisee'] == true) {
+            this.boisson['EstAlcoolisee'] = 1;
+        }
+        else {
+            this.boisson['EstAlcoolisee'] = 0;
+        }
         this.db.executeSql('INSERT INTO `Boisson` (nom, prix, description, pompe1, pompe2, photo, actif, EstAlcoolisee) VALUES (\'' + this.boisson['nom'] + '\', ' + parseFloat(this.boisson['prix']) + ', \'' + this.boisson['description'] + '\', ' + parseInt(this.boisson['pompe1']) + ', ' + parseInt(this.boisson['pompe2']) + ', \'' + this.boisson['photo'] + '\', ' + this.boisson['actif'] + ', ' + this.boisson['EstAlcoolisee'] + ', last_insert_rowid())', {})
             .then(function () { return console.log('Movie inserted !'); })
             .then(function () { return console.log('Executed SQL'); })
             .catch(function (e) { return console.log(e); });
     };
+    AjoutPage.prototype.displayBoisson = function () {
+        var _this = this;
+        this.boisson2 = [];
+        this.db.executeSql('SELECT name FROM `Boisson`', {})
+            .then(function (data) {
+            if (data == null) {
+                return;
+            }
+            if (data.rows) {
+                if (data.rows.length > 0) {
+                    for (var i = 0; i < data.rows.length; i++) {
+                        _this.boisson2.push(data.rows.item(i).name);
+                    }
+                }
+            }
+        });
+    };
     AjoutPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-ajout',template:/*ion-inline-start:"C:\Users\Cyril VELLA\Desktop\ionic-tom\src\pages\ajout\ajout.html"*/'<!--\n\nGenerated template for the AjoutPage page.\n\n\n\nSee http://ionicframework.com/docs/components/#navigation for more info on\n\nIonic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar color="dark">\n\n    <ion-title>Ajouter une boisson</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding class="theme">\n\n  <form (ngSubmit)="ajout()">\n\n    <ion-item id="rounded">\n\n      <ion-label>Nom de la boisson</ion-label>\n\n      <ion-input type="text" [(ngModel)]="boisson.nom" name="nom" required></ion-input>\n\n    </ion-item>\n\n    <ion-item id="rounded">\n\n      <ion-label>Prix de la boisson</ion-label>\n\n      <ion-input type="number" [(ngModel)]="boisson.prix" name="prix"></ion-input>\n\n    </ion-item>\n\n    <ion-item id="rounded">\n\n      <ion-label>Description de la boisson</ion-label>\n\n      <ion-input type="text" [(ngModel)]="boisson.description" name="description"></ion-input>\n\n    </ion-item>\n\n    <ion-item id="rounded">\n\n      <ion-label>Choix de la pompe1</ion-label>\n\n      <ion-input type="number" [(ngModel)]="boisson.pompe1" name="pompe1"></ion-input>\n\n    </ion-item>\n\n    <ion-item id="rounded">\n\n      <ion-label>Choix de la pompe 2</ion-label>\n\n      <ion-input type="number" [(ngModel)]="boisson.pompe2"  name="pompe2"></ion-input>\n\n    </ion-item>\n\n    <ion-item id="rounded">\n\n      <ion-label>Montrer la boisson</ion-label>\n\n      <ion-toggle [(ngModel)]="boisson.actif" name="actif"></ion-toggle>\n\n    </ion-item>\n\n    <ion-item id="rounded">\n\n      <ion-label>Alcolisée ?</ion-label>\n\n      <ion-toggle [(ngModel)]="boisson.EstAlcoolisee" name="actif"></ion-toggle>\n\n    </ion-item>\n\n    <button ion-button type="submit" block>Ajouter une boisson</button>\n\n  </form>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Cyril VELLA\Desktop\ionic-tom\src\pages\ajout\ajout.html"*/,
+            selector: 'page-ajout',template:/*ion-inline-start:"C:\Users\Cyril VELLA\Desktop\ionic-tom\src\pages\ajout\ajout.html"*/'<!--\n\nGenerated template for the AjoutPage page.\n\n\n\nSee http://ionicframework.com/docs/components/#navigation for more info on\n\nIonic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar color="dark">\n\n    <ion-title>Ajouter une boisson</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding class="theme">\n\n  <form (ngSubmit)="ajout()">\n\n    <ion-item id="rounded">\n\n      <ion-label>Nom de la boisson</ion-label>\n\n      <ion-input type="text" [(ngModel)]="boisson.nom" name="nom" required></ion-input>\n\n    </ion-item>\n\n    <ion-item id="rounded">\n\n      <ion-label>Prix de la boisson</ion-label>\n\n      <ion-input type="number" [(ngModel)]="boisson.prix" name="prix"></ion-input>\n\n    </ion-item>\n\n    <ion-item id="rounded">\n\n      <ion-label>Description de la boisson</ion-label>\n\n      <ion-input type="text" [(ngModel)]="boisson.description" name="description"></ion-input>\n\n    </ion-item>\n\n    <ion-item id="rounded">\n\n      <ion-label>Choix de la pompe1</ion-label>\n\n      <ion-input type="number" [(ngModel)]="boisson.pompe1" name="pompe1"></ion-input>\n\n    </ion-item>\n\n    <ion-item id="rounded">\n\n      <ion-label>Choix de la pompe 2</ion-label>\n\n      <ion-input type="number" [(ngModel)]="boisson.pompe2"  name="pompe2"></ion-input>\n\n    </ion-item>\n\n    <ion-item id="rounded">\n\n      <ion-label>Montrer la boisson</ion-label>\n\n      <ion-toggle [(ngModel)]="boisson.actif" name="actif"></ion-toggle>\n\n    </ion-item>\n\n    <ion-item id="rounded">\n\n      <ion-label>Alcolisée ?</ion-label>\n\n      <ion-toggle [(ngModel)]="boisson.EstAlcoolisee" name="actif"></ion-toggle>\n\n    </ion-item>\n\n    <button ion-button type="submit" block>Ajouter une boisson</button>\n\n  </form>\n\n\n\n  <ion-list *ngIf="boisson2">\n\n    <ion-item *ngFor="let movie of boisson2">\n\n      <ion-label fixed>{{ movie }}</ion-label>\n\n    </ion-item>\n\n  </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Cyril VELLA\Desktop\ionic-tom\src\pages\ajout\ajout.html"*/,
         }),
         __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_sqlite__["a" /* SQLite */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_sqlite__["a" /* SQLite */]) === "function" && _c || Object])
     ], AjoutPage);
