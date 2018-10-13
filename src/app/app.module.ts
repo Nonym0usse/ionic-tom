@@ -6,8 +6,6 @@
  * @Last modified time: 2018-02-10T15:16:49+01:00
  */
 
-
-
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -23,9 +21,9 @@ import { MentionsPage } from '../pages/mentions/mentions';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { PizzaServiceProvider } from '../providers/pizza-service/pizza-service';
 import { HttpClientModule } from '@angular/common/http';
 import { SQLite } from '@ionic-native/sqlite';
+import { BoissonProvider } from '../providers/boisson/boisson';
 
 @NgModule({
   declarations: [
@@ -59,7 +57,7 @@ import { SQLite } from '@ionic-native/sqlite';
     SplashScreen,
     SQLite,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    PizzaServiceProvider
+    BoissonProvider
   ]
 })
 export class AppModule {}

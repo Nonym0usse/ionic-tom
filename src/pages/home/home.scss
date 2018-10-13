@@ -8,14 +8,24 @@
 
 page-home {
   .card{
-    width: 40%;
+    width: 30%;
     display: inline-block;
     margin: 0 auto;
   }
-  .theme{
-    background-image: url('../assets/imgs/background.png');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    flex: 1;
+
+  ion-header{
+    ion-navbar{
+      div.toolbar-background{
+        background-image: url('../assets/imgs/background.png');
+        background-repeat: no-repeat;
+        background-size:cover;
+        text-align: center;
+      }
+    }
+    ion-title{
+      div.toolbar-title{
+        color: #FFF !important;
+      }
+    }
   }
 }

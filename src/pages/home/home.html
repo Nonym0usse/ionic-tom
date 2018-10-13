@@ -1,12 +1,25 @@
 <ion-header>
-  <ion-navbar color="dark">
+  <ion-navbar class="theme">
     <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
+      <ion-icon style="color: #FFF" name="menu"></ion-icon>
     </button>
     <ion-title>Choisir une boisson</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding class="theme">
-
+<ion-content padding>
+  <ion-card *ngFor="let pizzaview of boissons">
+    <ion-card-content class="card-custom">
+      <ion-card-title class="text-title">
+        {{pizzaview.nom}}
+      </ion-card-title>
+      <p class="text-desc">
+        {{pizzaview.desc}}
+      </p>
+      <p class="text-desc">
+        {{pizzaview.prix}}
+      </p>
+      <button ion-button color="secondary" (click)="choisir()">Choisir cette boisson</button>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
